@@ -6,7 +6,8 @@ model_type="base"
 
 python run_discrimination.py \
     --config_file=/content/grover/configs/${model_type}.json \
-    --input_file=${input_file} \
+    --input_data=${input_file} \
     --output_dir=${output_dir} \
     --use_tpu=False \
     --mode_type=${model_type} \
+    --do_train=True \
