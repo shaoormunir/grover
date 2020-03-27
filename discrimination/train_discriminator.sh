@@ -5,7 +5,7 @@ output_dir="/content/grover/model_checkpoints"
 model_type="base"
 
 python run_discrimination.py \
-    --config_file=/content/grover/configs/${model_type}.json \
+    --config_file=/content/grover/lm/configs/${model_type}.json \
     --input_data=${input_file} \
     --output_dir=${output_dir} \
     --use_tpu=False \
