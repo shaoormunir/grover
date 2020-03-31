@@ -76,7 +76,7 @@ flags.DEFINE_bool(
     "predict_test", False,
     "Whether to run the model in inference mode on the test set.")
 
-flags.DEFINE_float("num_train_epochs", 3.0,
+flags.DEFINE_float("num_train_epochs", 8.0,
                    "Total number of training epochs to perform.")
 
 flags.DEFINE_float(
