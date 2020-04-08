@@ -2,8 +2,8 @@
 export GOOGLE_APPLICATION_CREDENTIALS=/content/iowa-project-2.json
 
 input_file="/content/input-data/dataset_train.json"
-output_dir="gs://model_checkpoint_bucket/grover-discriminator-base-run-3"
-init_checkpoint="gs://model_checkpoint_bucket/grover-discriminator-base-run-2"
+output_dir="gs://new_model_bucket/grover-discriminator-run-1-base"
+init_checkpoint="gs://new_model_bucket/grover-discriminator-pretrained-base"
 model_type="base"
 
 python run_discrimination.py \
