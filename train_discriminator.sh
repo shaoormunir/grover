@@ -2,9 +2,9 @@
 export GOOGLE_APPLICATION_CREDENTIALS=/content/iowa-project-2.json
 
 input_file="/content/input-data/dataset_train.json"
-output_dir="gs://new_model_bucket/grover-discriminator-run-1-base"
-init_checkpoint="gs://new_model_bucket/grover-discriminator-pretrained-base"
-model_type="base"
+output_dir="gs://new_model_bucket/grover-discriminator-run-1-large"
+init_checkpoint="gs://new_model_bucket/grover-discriminator-pretrained-large"
+model_type="large"
 
 python run_discrimination.py \
     --config_file=/content/grover/lm/configs/${model_type}.json \
